@@ -20,7 +20,7 @@ func GetFileType(filePath string) string {
 func CalJSLOC(jsloc *loc.JSLOC) {
 	jsloc.EstimateLOCInJS()
 	fmt.Println("Blank comment count          :", jsloc.BlockComments+jsloc.BlanksCount)
-	fmt.Println("Comments count          :", jsloc.CommentsCount)
+	fmt.Println("Comments count               :", jsloc.CommentsCount)
 	fmt.Println("Code comment count           :", jsloc.CodeCount)
 	fmt.Println("Total count                  :", jsloc.BlockComments+jsloc.BlanksCount+jsloc.CodeCount+jsloc.CommentsCount)
 }
